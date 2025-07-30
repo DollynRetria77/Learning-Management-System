@@ -1,0 +1,11 @@
+// TYPOGRAPHY
+// --------------------------------------------------
+
+@function rem($px, $base:$font-size-base) {
+    @return ($px / $base) * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: rem($size);
+}

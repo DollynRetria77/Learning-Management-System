@@ -1,0 +1,30 @@
+.title-h2{
+    @include font-size(40px);
+    font-weight:$semi-bold;
+    font-family:$opensans;
+    text-align:center;
+}
+
+//bouton
+.btn-custom{
+    display:inline-block; 
+    width:100%;
+    font-family:$opensans;
+    @include font-size(14px);
+    height:40px;
+    line-height:40px;
+    text-decoration: none;
+    @include border-radius(3px);
+    color:$white;
+    background-color:#007bff;
+    text-align:center;
+
+    &.active{
+        font-weight:bold;
+    }
+
+    &:hover{
+        text-decoration:none;
+        color:$white;
+    }
+}
